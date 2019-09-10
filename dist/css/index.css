@@ -62,21 +62,21 @@ input[type='text'] {
   overflow: hidden;
 }
 
-.jd .tab-head li, .jd .jd-content ul li a, .jd .jd-content ul li a span, .jd .jd-btn, .whole .whole-yh .yh-item, .whole .whole-content .whole-item .item-btn, .whole .whole-content .whole-item .item-btn span, .whole .whole-price .price-r .r-btn, .gct .gct-content ul li, .gct .gct-content .gct-btn, .en .test-plan, .en .test-plan .plan-item .item-num, .en .test-plan .plan-item .item-btn, .en .en-btn a, .teachers .swiper-container ul li .honor .honor-btn a, .teachers .teachers-btn, .buy-class .content ul li img, #footer-div .links a, .appoint-popup .appoint-form input {
+.jd .tab-head li, .jd .jd-content ul li a, .jd .jd-content ul li a span, .jd .jd-btn, .whole .whole-yh .yh-item, .whole .whole-yh .yh-item .item-detail .detail-row .icon, .whole .whole-content .whole-item .item-btn, .whole .whole-content .whole-item .item-btn span, .whole .whole-price .price-r .r-btn, .gct .gct-cont ul li, .gct .gct-cont .gct-btn, .en .test-plan, .en .test-plan .plan-item .item-num, .en .test-plan .plan-item .item-btn, .en .en-btn a, .teachers .swiper-container ul li .honor .honor-btn a, .teachers .teachers-btn, .classroom .classroom-btn, .buy-class .cont ul li img, #footer-div .links a, .right-fixed .consult, .right-fixed .answer, .appoint-popup .appoint-form input {
   display: inline-block;
   *zoom: 1;
   *display: inline;
 }
 
-.jd .jd-content ul, .whole .whole-yh .yh-item .item-row, .whole .whole-content, .teachers .swiper-container ul, .classroom .content ul, .buy-class .content ul {
+.jd .jd-content ul, .whole .whole-yh .yh-item .item-row, .whole .whole-content, .teachers .swiper-container ul, .classroom .content ul, .buy-class .cont ul {
   zoom: 1;
 }
 
-.jd .jd-content ul:after, .whole .whole-yh .yh-item .item-row:after, .whole .whole-content:after, .teachers .swiper-container ul:after, .classroom .content ul:after, .buy-class .content ul:after {
+.jd .jd-content ul:after, .whole .whole-yh .yh-item .item-row:after, .whole .whole-content:after, .teachers .swiper-container ul:after, .classroom .content ul:after, .buy-class .cont ul:after {
   clear: both;
 }
 
-.jd .jd-content ul:before, .whole .whole-yh .yh-item .item-row:before, .whole .whole-content:before, .teachers .swiper-container ul:before, .classroom .content ul:before, .buy-class .content ul:before, .jd .jd-content ul:after, .whole .whole-yh .yh-item .item-row:after, .whole .whole-content:after, .teachers .swiper-container ul:after, .classroom .content ul:after, .buy-class .content ul:after {
+.jd .jd-content ul:before, .whole .whole-yh .yh-item .item-row:before, .whole .whole-content:before, .teachers .swiper-container ul:before, .classroom .content ul:before, .buy-class .cont ul:before, .jd .jd-content ul:after, .whole .whole-yh .yh-item .item-row:after, .whole .whole-content:after, .teachers .swiper-container ul:after, .classroom .content ul:after, .buy-class .cont ul:after {
   content: "";
   display: table;
 }
@@ -128,7 +128,7 @@ input[type='text'] {
   color: #333333;
 }
 
-.header .ky .ky-item.current {
+.header .ky .ky-item.cur {
   color: #ffffff;
   background-color: #07c295;
 }
@@ -147,7 +147,7 @@ input[type='text'] {
   float: left;
   width: 44px;
   height: 44px;
-  background: url("../images/tel.png") no-repeat;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/tel.png") no-repeat;
   margin-right: 8px;
 }
 
@@ -198,9 +198,14 @@ input[type='text'] {
   background-position: center;
 }
 
+.banner .banner-link {
+  display: block;
+  height: 100%;
+}
+
 .title-module {
   text-align: center;
-  background: url("../images/title_1.png") no-repeat center top;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/title_1.png") no-repeat center top;
   color: #333333;
 }
 
@@ -302,7 +307,7 @@ input[type='text'] {
   z-index: 20;
   width: 100%;
   height: 100%;
-  background: url("../images/pause.png") no-repeat center rgba(0, 0, 0, 0.6);
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/pause.png") no-repeat center rgba(0, 0, 0, 0.6);
 }
 
 .jd .jd-btn {
@@ -320,7 +325,7 @@ input[type='text'] {
 .whole {
   padding-top: 50px;
   margin-bottom: 50px;
-  background: url("../images/bg_1.png") no-repeat center top;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/bg_1.png") no-repeat center top;
 }
 
 .whole .title-module {
@@ -397,6 +402,97 @@ input[type='text'] {
   color: #38a8f6;
 }
 
+.whole .whole-yh .yh-item:nth-of-type(2) .item-detail {
+  right: 500px;
+}
+
+.whole .whole-yh .yh-item .item-detail {
+  width: 543px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 5px 9px 16px 0px rgba(13, 69, 66, 0.2);
+          box-shadow: 5px 9px 16px 0px rgba(13, 69, 66, 0.2);
+  position: absolute;
+  right: -550px;
+  top: 20px;
+  z-index: 10;
+  padding: 30px 30px 46px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  display: none;
+}
+
+.whole .whole-yh .yh-item .item-detail .detail-close {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/close.png") no-repeat;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.whole .whole-yh .yh-item .item-detail .rule {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+.whole .whole-yh .yh-item .item-detail .detail-row {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.whole .whole-yh .yh-item .item-detail .detail-row .icon {
+  width: 22px;
+  height: 22px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #4cc5cd;
+  font-style: normal;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.whole .whole-yh .yh-item .item-detail .intro {
+  margin-left: 33px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.whole .whole-yh .yh-item .item-detail .intro .intro-title {
+  font-size: 14px;
+  border-top: 1px dashed #cccccc;
+  margin-top: 10px;
+  padding-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.whole .whole-yh .yh-item .item-detail .intro .intro-title:nth-of-type(1) {
+  border-top: 0;
+}
+
+.whole .whole-yh .yh-item .item-detail .intro .intro-title.highlight {
+  color: #ff5d50;
+}
+
+.whole .whole-yh .yh-item .item-detail .intro .intro-title strong {
+  color: #ff5d50;
+}
+
+.whole .whole-yh .yh-item .item-detail .intro p strong {
+  font-weight: normal;
+  color: #f97309;
+}
+
+.whole .whole-yh .yh-item.cur .item-detail {
+  display: block;
+}
+
 .whole .whole-content {
   margin-right: -20px;
   margin-bottom: 50px;
@@ -430,12 +526,12 @@ input[type='text'] {
   line-height: 28px;
   color: #333333;
   padding-left: 28px;
-  background: url("../images/icon_4.png") no-repeat center left;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/icon_4.png") no-repeat center left;
   margin-bottom: 4px;
 }
 
 .whole .whole-content .whole-item .item-detail .detail-title.sel {
-  background: url("../images/icon_3.png") no-repeat center left;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/icon_3.png") no-repeat center left;
 }
 
 .whole .whole-content .whole-item .item-detail p {
@@ -476,7 +572,7 @@ input[type='text'] {
 
 .whole .whole-price {
   height: 131px;
-  background: url("../images/bg_2.png") no-repeat;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/bg_2.png") no-repeat;
   padding-left: 96px;
   padding-right: 80px;
   -webkit-box-sizing: border-box;
@@ -490,7 +586,7 @@ input[type='text'] {
   color: #17b58f;
   font-size: 18px;
   font-weight: bold;
-  padding: 36px 60px 0;
+  padding: 30px 60px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 36px;
@@ -539,32 +635,32 @@ input[type='text'] {
 .gct {
   padding-top: 32px;
   padding-bottom: 61px;
-  background: url("../images/bg_3.png") no-repeat center bottom;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/bg_3.png") no-repeat center bottom;
 }
 
 .gct .title-module span {
   color: #333333;
 }
 
-.gct .gct-content {
+.gct .gct-cont {
   width: 700px;
   height: 421px;
   border-radius: 20px;
   float: right;
   margin-right: 49px;
   margin-top: 79px;
-  background: url("../images/bg_3_1.png") no-repeat right bottom rgba(255, 255, 255, 0.8);
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/bg_3_1.png") no-repeat right bottom rgba(255, 255, 255, 0.8);
   position: relative;
 }
 
-.gct .gct-content ul {
+.gct .gct-cont ul {
   padding-left: 50px;
   padding-top: 41px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.gct .gct-content ul li {
+.gct .gct-cont ul li {
   height: 41px;
   line-height: 40px;
   border-radius: 21px;
@@ -579,7 +675,13 @@ input[type='text'] {
   margin-bottom: 18px;
 }
 
-.gct .gct-content .gct-btn {
+.gct .gct-cont ul li.cur {
+  border: 1px solid #17b58f;
+  background-color: #17b58f;
+  color: #ffffff;
+}
+
+.gct .gct-cont .gct-btn {
   width: 300px;
   height: 52px;
   line-height: 50px;
@@ -600,12 +702,12 @@ input[type='text'] {
 }
 
 .en .title-module {
-  background: url("../images/title_4.png") no-repeat center top;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/title_4.png") no-repeat center top;
 }
 
 .en .test-plan {
   margin-top: 52px;
-  background: url("../images/bg_4.png") no-repeat center;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/bg_4.png") no-repeat center;
   padding: 28px 28px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -641,7 +743,7 @@ input[type='text'] {
 }
 
 .en .test-plan .plan-item:nth-of-type(1) .item-num {
-  background: url("../images/num_1.png") no-repeat;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/num_1.png") no-repeat;
   left: -16px;
   top: -16px;
 }
@@ -653,7 +755,7 @@ input[type='text'] {
 }
 
 .en .test-plan .plan-item:nth-of-type(2) .item-num {
-  background: url("../images/num_2.png") no-repeat;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/num_2.png") no-repeat;
   right: -16px;
   top: -16px;
 }
@@ -665,7 +767,7 @@ input[type='text'] {
 }
 
 .en .test-plan .plan-item:nth-of-type(3) .item-num {
-  background: url("../images/num_3.png") no-repeat;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/num_3.png") no-repeat;
   left: -16px;
   top: -16px;
 }
@@ -677,7 +779,7 @@ input[type='text'] {
 }
 
 .en .test-plan .plan-item:nth-of-type(4) .item-num {
-  background: url("../images/num_4.png") no-repeat;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/num_4.png") no-repeat;
   right: -16px;
   top: -16px;
 }
@@ -686,7 +788,7 @@ input[type='text'] {
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
-  background: url("../images/icon_5.png") no-repeat 0px 7px;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/icon_5.png") no-repeat 0px 7px;
   padding-left: 12px;
 }
 
@@ -722,10 +824,6 @@ input[type='text'] {
   cursor: pointer;
 }
 
-.en .en-text .look-picture:hover + .text-img {
-  display: block;
-}
-
 .en .en-text .text-img {
   width: 1160px;
   height: 500px;
@@ -734,6 +832,10 @@ input[type='text'] {
   left: -10px;
   z-index: 10;
   display: none;
+}
+
+.en .en-text .text-img.cur {
+  display: block;
 }
 
 .en .en-btn {
@@ -761,7 +863,7 @@ input[type='text'] {
 /* 师资 */
 .teachers {
   height: 710px;
-  background: url("../images/bg_5.png") no-repeat center;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/bg_5.png") no-repeat center;
   padding-top: 134px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -769,7 +871,7 @@ input[type='text'] {
 }
 
 .teachers .title-module {
-  background: url("../images/title_5.png") no-repeat center top;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/title_5.png") no-repeat center top;
   color: #ffffff;
   margin-bottom: 50px;
 }
@@ -864,7 +966,7 @@ input[type='text'] {
 .teachers .swiper-container .swiper-button-prev {
   width: 55px;
   height: 101px;
-  background: url("../images/able.png") no-repeat;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/able.png") no-repeat;
   background-size: 100% 100%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -872,7 +974,7 @@ input[type='text'] {
 }
 
 .teachers .swiper-container .swiper-button-prev.swiper-button-disabled {
-  background: url("../images/unable.png") no-repeat;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/unable.png") no-repeat;
   background-size: 100% 100%;
   -webkit-transform: rotate(0);
           transform: rotate(0);
@@ -881,7 +983,7 @@ input[type='text'] {
 .teachers .swiper-container .swiper-button-next {
   width: 55px;
   height: 101px;
-  background: url("../images/able.png") no-repeat;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/able.png") no-repeat;
   background-size: 100% 100%;
   margin-top: -50px;
 }
@@ -904,7 +1006,7 @@ input[type='text'] {
 }
 
 .classroom .title-module {
-  background: url("../images/title_6.png") no-repeat center top;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/title_6.png") no-repeat center top;
 }
 
 .classroom .content {
@@ -936,10 +1038,10 @@ input[type='text'] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-top: 30px;
+  text-align: left;
 }
 
 .classroom .classroom-btn {
-  display: block;
   width: 360px;
   height: 52px;
   background-color: #f9582d;
@@ -953,24 +1055,24 @@ input[type='text'] {
 /* 购课 */
 .buy-class {
   height: 296px;
-  background: url("../images/bg_6.png") no-repeat center;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/bg_6.png") no-repeat center;
   margin-top: -18px;
   padding-top: 84px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.buy-class .content {
+.buy-class .cont {
   -webkit-box-shadow: -3px 2px 16px 0px rgba(13, 69, 66, 0.16);
           box-shadow: -3px 2px 16px 0px rgba(13, 69, 66, 0.16);
   border-radius: 11px;
-  background: url("../images/icon_6.png") no-repeat 50px center #ffffff;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/icon_6.png") no-repeat 50px center #ffffff;
   padding: 20px 0 20px 360px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.buy-class .content ul li {
+.buy-class .cont ul li {
   float: left;
   width: 280px;
   height: 110px;
@@ -982,14 +1084,14 @@ input[type='text'] {
   position: relative;
 }
 
-.buy-class .content ul li .cont-title {
+.buy-class .cont ul li .cont-title {
   font-size: 16px;
   line-height: 24px;
   color: #333333;
   margin-top: 12px;
 }
 
-.buy-class .content ul li .detail {
+.buy-class .cont ul li .detail {
   width: 543px;
   background-color: #ffffff;
   -webkit-box-shadow: 5px 9px 16px 0px rgba(13, 69, 66, 0.2);
@@ -1004,39 +1106,39 @@ input[type='text'] {
   display: none;
 }
 
-.buy-class .content ul li .detail .detail-close {
+.buy-class .cont ul li .detail .detail-close {
   display: block;
   width: 16px;
   height: 16px;
-  background: url("../images/close.png") no-repeat;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/close.png") no-repeat;
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
 }
 
-.buy-class .content ul li .detail .text {
+.buy-class .cont ul li .detail .text {
   line-height: 26px;
 }
 
-.buy-class .content ul li .detail .text .text-title {
+.buy-class .cont ul li .detail .text .text-title {
   color: #17b58f;
   font-size: 16px;
 }
 
-.buy-class .content ul li .detail .text .text-intro {
+.buy-class .cont ul li .detail .text .text-intro {
   font-size: 14px;
 }
 
-.buy-class .content ul li .detail .text span {
+.buy-class .cont ul li .detail .text span {
   color: #f9582d;
 }
 
-.buy-class .content ul li:hover .detail {
+.buy-class .cont ul li.cur .detail {
   display: block;
 }
 
-.buy-class .content ul li:nth-of-type(3) .detail {
+.buy-class .cont ul li:nth-of-type(3) .detail {
   right: -2px;
 }
 
@@ -1085,11 +1187,68 @@ input[type='text'] {
   color: #17b58f;
 }
 
+/* 右悬浮 */
+.right-fixed {
+  width: 160px;
+  height: 400px;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/right-fixed.png") no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  text-align: center;
+  z-index: 100;
+}
+
+.right-fixed .close {
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.right-fixed .consult {
+  width: 130px;
+  height: 120px;
+  position: absolute;
+  top: 77px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.right-fixed .answer {
+  width: 130px;
+  height: 120px;
+  position: absolute;
+  top: 209px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.right-fixed .to-top {
+  width: 112px;
+  height: 47px;
+  cursor: pointer;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 /* 预约试听弹窗 */
 .appoint-popup {
   width: 520px;
   height: 400px;
-  background: url("../images/appoint-popup.png") no-repeat top;
+  background: url("https://img.thea.cn/jingjia/public/201909/hbj/kyjj/images/appoint-popup.png") no-repeat top;
   padding: 60px 40px 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
